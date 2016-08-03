@@ -21,7 +21,7 @@ jQuery.fn.repeatable = function()
 
 			var stepper = function()
 			{
-				obj.click();
+			    obj.click();
 			    clearInterval(timer);
 			    interval = (interval < min_speed) ? min_speed : parseInt(interval/divisor);
 			    timer = setInterval(stepper, interval);
